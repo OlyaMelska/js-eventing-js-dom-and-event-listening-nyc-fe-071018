@@ -3,7 +3,7 @@ const paragraph = document.querySelector('p');
 let divs = document.querySelectorAll('div');
 
 function bubbled (event){
-  
+  console.log(this.firstChild.nodeValue.trim() + ' bubbled')
 }
 
 main.addEventListener('click', (event) => alert('Hey, you clicked me!'));
