@@ -4,7 +4,7 @@ let divs = document.querySelectorAll('div');
 
 function bubbled (event){
   console.log(this.firstChild.nodeValue.trim() + ' bubbled');
-  this.style.backgroundColor = 'black';
+  this.style.backgroundColor = 'green';
 }
 
 for (div of divs){
