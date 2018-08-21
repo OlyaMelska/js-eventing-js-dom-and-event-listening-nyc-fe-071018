@@ -6,6 +6,10 @@ function bubbled (event){
   console.log(this.firstChild.nodeValue.trim() + ' bubbled')
 }
 
+for (div of divs){
+  div.addEventListener('click', bubbled);
+}
+
 main.addEventListener('click', (event) => alert('Hey, you clicked me!'));
 
 paragraph.addEventListener('click', (event) => {
