@@ -7,7 +7,7 @@ function bubbled (event){
 }
 
 for (div of divs){
-  div.addEventListener('click', bubbled, true);
+  div.addEventListener('click', bubbled, false);
 }
 
 main.addEventListener('click', (event) => alert('Hey, you clicked me!'));
