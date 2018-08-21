@@ -3,7 +3,14 @@ const paragraph = document.querySelector('p');
 let divs = document.querySelectorAll('div');
 const input = document.querySelector('input');
 
-input.addEventListener('keydown', (event) => console.log(event))
+input.addEventListener('keydown', (event) => {
+  console.log(event)
+  if(event.which === 71){
+    event.preventDefault();
+  }
+  
+  }
+  )
 
 function bubbled (event){
   console.log(this.firstChild.nodeValue.trim() + ' bubbled');
