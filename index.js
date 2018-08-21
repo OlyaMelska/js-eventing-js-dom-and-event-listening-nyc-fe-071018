@@ -3,7 +3,8 @@ const paragraph = document.querySelector('p');
 let divs = document.querySelectorAll('div');
 
 function bubbled (event){
-  console.log(this.firstChild.nodeValue.trim() + ' bubbled')
+  console.log(this.firstChild.nodeValue.trim() + ' bubbled');
+  this.style.backgroundColor = 'black';
 }
 
 for (div of divs){
